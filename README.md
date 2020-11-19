@@ -1,3 +1,5 @@
+![Chef Validation and Testing](https://github.com/mtharpe/chef-waypoint-recipe/workflows/Chef%20Validation%20and%20Testing/badge.svg)
+
 # Description
 
 Installs/Configures HashiCorp Waypoint as a standaone server.
