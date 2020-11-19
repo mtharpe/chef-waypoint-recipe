@@ -1,4 +1,37 @@
-# chef-waypoint-recipe
+# Description
 
-TODO: Enter the cookbook description here.
+Installs/Configures HashiCorp Waypoint as a standaone server.
 
+# Requirements
+
+
+## Chef Client:
+
+* chef (>= 15.0) ()
+
+## Platform:
+
+* ubuntu (< 16.0)
+
+## Cookbooks:
+
+*No dependencies defined*
+
+# Attributes
+
+* `node['waypoint_server']['db_path']` -  Defaults to `/var/run/waypoint`.
+* `node['waypoint_server']['waypoint_bootstrap_out']` -  Defaults to `nil`.
+
+# Recipes
+
+* waypoint_server::default
+
+# License and Maintainer
+
+Maintainer:: Michael Tharpe (<mtharpe@noemail.not>)
+
+Source:: https://github.com/mtharpe/chef-waypoint-recipe
+
+Issues:: https://github.com/mtharpe/chef-waypoint-recipe/issues
+
+License:: Apache-2.0

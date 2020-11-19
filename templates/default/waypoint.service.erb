@@ -1,0 +1,9 @@
+[Unit]
+Description=HashiCorp Waypoint Server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/waypoint server run -accept-tos -db=<%= node['waypoint_server']['db_path'] %> -listen-http="0.0.0.0:9702"
+
+[Install]
+WantedBy=multi-user.target
